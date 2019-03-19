@@ -4,11 +4,23 @@ ul {
   padding: 0;
   overflow: hidden;
 }
-li {
+header li {
   float: right;
 }
-li a {
-  display:inline-block;
+.footer-left {
+  float: left;
+  display:inline;
+  padding: 0;
+  width: 300px;
+}
+.footer-right {
+  float: right;
+  display:inline;
+  padding: 8px;
+  width: 600px;
+}
+li {
+  display:inline;
   padding: 8px;
   width: 60px;
 }
@@ -27,8 +39,8 @@ a:hover {
 }
 #searchbox {
   display: block;
-  width: 400px;
-  height: 30px;
+  width: 600px;
+  height: 40px;
   margin: 50px auto;
   border-radius: 15px;
   border-color: #CCC;
@@ -49,11 +61,30 @@ a:hover {
 .button {
   border: 1px solid white;
   background-color: #DDD;
+  color: #666;
   display: inline-block;
   margin: 20px auto;
   width: 150px;
   height: 40px;
+  border-radius: 5px;
+}
+.button:hover {
+  border: 1px solid #BBB;
+  color: rgb(73, 73, 73);
+  box-shadow: 2px 2px 5px rgb(175, 175, 175)
 }
 p {
   text-align: center;
 }
+footer {
+  position: absolute;
+  bottom: 0%;
+  height: 40px;
+  width: 100%;
+  box-sizing: content-box;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+}
+footer div {
+  background-color: #f2f2f2;
